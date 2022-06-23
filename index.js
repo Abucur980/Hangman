@@ -21,7 +21,7 @@ function startGame() {
 	let lettersFound = 0;
 	for(let i = 0; i < keyChars.length; ++i) {
 		keyChars[i].addEventListener("click", () => {
-			if(theWord.indexOf(keyChars[i].textContent) > -1) {
+			if(theWord.indexOf(keyChars[i].textContent) > - 1) {
 				for(let j = 0; j < theWord.length; ++j) {
 					let currentChar = "null for the moment";
 					if(theWord[j] == keyChars[i].textContent) {
