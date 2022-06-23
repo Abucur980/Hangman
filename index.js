@@ -29,8 +29,7 @@ function startGame() {
 						currentChar = keyChars[i].textContent;
 						if(theWord[j] == currentChar) {
 							++lettersFound;
-						} else {
-							keyChars[i].setAttribute("disabled", "");
+                            keyChars[i].setAttribute("disabled", "");
 						}
 						if(lettersFound == theWord.length) {
 							document.getElementById("success").classList.remove("d-none");
