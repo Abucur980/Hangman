@@ -20,55 +20,55 @@
         </div>
         <div class="row">
             <div class="input-group mx-auto px-0">
-                <input type="password" class="form-control" placeholder="Introduce the word" aria-label="Introduce the word" aria-describedby="basic-addon2">
+                <input id="theWord" type="password" class="form-control" placeholder="Introduce the word" aria-label="Introduce the word" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-danger" type="button">Start</button>
+                  <button id="btn-start" class="btn btn-outline-danger" type="button">Start</button>
                 </div>
               </div>
         </div>
     </div>
-    <div class="d-none container w-75 mt-5 text-center d-flex flex-wrap justify-content-around">
+    <div id="hangman" class="d-none container w-75 mt-5 text-center d-flex flex-wrap justify-content-around">
 
             <div class="overflow-hidden" style="width:75px;">
-                <img class="position-relative" src="hangedMan.png" alt="">
+                <img id="hangman-img" class="position-relative" src="hangedMan.png" alt="">
             </div>
 
-            <div>
-               <span class="chars"></span>
+            <div id="charPlaceholder">
+               <!-- <span class="chars"></span> -->
             </div>
 
             <div >
-                <span class="chars text-danger">Tries: x + 3</span>
+                <span style="font-size: 36px;" id="tries" class="text-danger"></span>
             </div>
 
     </div>
-    <div style="gap:8px;" class="d-none bg-light py-3 rounded container d-flex justify-content-center flex-wrap w-75 mt-3">
-        <button class="btn btn-lg btn-secondary">a</button>
-        <button class="btn btn-lg btn-secondary">b</button>
-        <button class="btn btn-lg btn-secondary">c</button>
-        <button class="btn btn-lg btn-secondary">d</button>
-        <button class="btn btn-lg btn-secondary">e</button>
-        <button class="btn btn-lg btn-secondary">f</button>
-        <button class="btn btn-lg btn-secondary">g</button>
-        <button class="btn btn-lg btn-secondary">h</button>
-        <button class="btn btn-lg btn-secondary">i</button>
-        <button class="btn btn-lg btn-secondary">j</button>
-        <button class="btn btn-lg btn-secondary">k</button>
-        <button class="btn btn-lg btn-secondary">l</button>
-        <button class="btn btn-lg btn-secondary">m</button>
-        <button class="btn btn-lg btn-secondary">n</button>
-        <button class="btn btn-lg btn-secondary">o</button>
-        <button class="btn btn-lg btn-secondary">p</button>
-        <button class="btn btn-lg btn-secondary">q</button>
-        <button class="btn btn-lg btn-secondary">r</button>
-        <button class="btn btn-lg btn-secondary">s</button>
-        <button class="btn btn-lg btn-secondary">t</button>
-        <button class="btn btn-lg btn-secondary">u</button>
-        <button class="btn btn-lg btn-secondary">v</button>
-        <button class="btn btn-lg btn-secondary">w</button>
-        <button class="btn btn-lg btn-secondary">x</button>
-        <button class="btn btn-lg btn-secondary">y</button>
-        <button class="btn btn-lg btn-secondary">z</button>
+    <div id="keyboard" style="gap:8px;" class="d-none bg-light py-3 rounded container d-flex justify-content-center flex-wrap w-75 mt-3">
+        <button id="char"  class="btn btn-lg btn-secondary">a</button>
+        <button id="char"  class="btn btn-lg btn-secondary">b</button>
+        <button id="char"  class="btn btn-lg btn-secondary">c</button>
+        <button id="char"  class="btn btn-lg btn-secondary">d</button>
+        <button id="char"  class="btn btn-lg btn-secondary">e</button>
+        <button id="char"  class="btn btn-lg btn-secondary">f</button>
+        <button id="char"  class="btn btn-lg btn-secondary">g</button>
+        <button id="char"  class="btn btn-lg btn-secondary">h</button>
+        <button id="char"  class="btn btn-lg btn-secondary">i</button>
+        <button id="char"  class="btn btn-lg btn-secondary">j</button>
+        <button id="char"  class="btn btn-lg btn-secondary">k</button>
+        <button id="char"  class="btn btn-lg btn-secondary">l</button>
+        <button id="char"  class="btn btn-lg btn-secondary">m</button>
+        <button id="char"  class="btn btn-lg btn-secondary">n</button>
+        <button id="char"  class="btn btn-lg btn-secondary">o</button>
+        <button id="char"  class="btn btn-lg btn-secondary">p</button>
+        <button id="char"  class="btn btn-lg btn-secondary">q</button>
+        <button id="char"  class="btn btn-lg btn-secondary">r</button>
+        <button id="char"  class="btn btn-lg btn-secondary">s</button>
+        <button id="char"  class="btn btn-lg btn-secondary">t</button>
+        <button id="char"  class="btn btn-lg btn-secondary">u</button>
+        <button id="char"  class="btn btn-lg btn-secondary">v</button>
+        <button id="char"  class="btn btn-lg btn-secondary">w</button>
+        <button id="char"  class="btn btn-lg btn-secondary">x</button>
+        <button id="char"  class="btn btn-lg btn-secondary">y</button>
+        <button id="char"  class="btn btn-lg btn-secondary">z</button>
     </div>
     <script src="index.js"></script>
     <script
