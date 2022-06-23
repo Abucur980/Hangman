@@ -13,19 +13,62 @@
     />
   </head>
   <body>
-    <h1 class="mt-5 text-center">The <span class="text-danger">Hangman</span> Game</h1>
-    <div id="introduction" class="container mt-5">
+    <h1 class="mt-5 text-center" style="margin-bottom: 8rem;">The <span class="text-danger">Hangman</span> Game</h1>
+    <div id="introduction" class="container w-75">
         <div class="row">
-            <p class="alert alert-primary w-50 mx-auto">The game is supposed to be played in at least 2 people. One will fill out the word and the other will try to guess it. <span class="text-danger">For consistency and to avoid issues add the word in lowercase.</span></p>
+            <p class="alert alert-primary mx-auto">The game is supposed to be played in at least 2 people. One will fill out the word and the other will try to guess it. <br> <span class="text-danger">For consistency and to avoid issues add the word in lowercase.</span></p>
         </div>
         <div class="row">
-            <div class="input-group mb-3 w-25 mx-auto">
+            <div class="input-group mx-auto px-0">
                 <input type="password" class="form-control" placeholder="Introduce the word" aria-label="Introduce the word" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-danger" type="button">Button</button>
+                  <button class="btn btn-outline-danger" type="button">Start</button>
                 </div>
               </div>
         </div>
+    </div>
+    <div class="d-none container w-75 mt-5 text-center d-flex flex-wrap justify-content-around">
+
+            <div class="overflow-hidden" style="width:75px;">
+                <img class="position-relative" src="hangedMan.png" alt="">
+            </div>
+
+            <div>
+               <span class="chars"></span>
+            </div>
+
+            <div >
+                <span class="chars text-danger">Tries: x + 3</span>
+            </div>
+
+    </div>
+    <div style="gap:8px;" class="d-none bg-light py-3 rounded container d-flex justify-content-center flex-wrap w-75 mt-3">
+        <button class="btn btn-lg btn-secondary">a</button>
+        <button class="btn btn-lg btn-secondary">b</button>
+        <button class="btn btn-lg btn-secondary">c</button>
+        <button class="btn btn-lg btn-secondary">d</button>
+        <button class="btn btn-lg btn-secondary">e</button>
+        <button class="btn btn-lg btn-secondary">f</button>
+        <button class="btn btn-lg btn-secondary">g</button>
+        <button class="btn btn-lg btn-secondary">h</button>
+        <button class="btn btn-lg btn-secondary">i</button>
+        <button class="btn btn-lg btn-secondary">j</button>
+        <button class="btn btn-lg btn-secondary">k</button>
+        <button class="btn btn-lg btn-secondary">l</button>
+        <button class="btn btn-lg btn-secondary">m</button>
+        <button class="btn btn-lg btn-secondary">n</button>
+        <button class="btn btn-lg btn-secondary">o</button>
+        <button class="btn btn-lg btn-secondary">p</button>
+        <button class="btn btn-lg btn-secondary">q</button>
+        <button class="btn btn-lg btn-secondary">r</button>
+        <button class="btn btn-lg btn-secondary">s</button>
+        <button class="btn btn-lg btn-secondary">t</button>
+        <button class="btn btn-lg btn-secondary">u</button>
+        <button class="btn btn-lg btn-secondary">v</button>
+        <button class="btn btn-lg btn-secondary">w</button>
+        <button class="btn btn-lg btn-secondary">x</button>
+        <button class="btn btn-lg btn-secondary">y</button>
+        <button class="btn btn-lg btn-secondary">z</button>
     </div>
     <script src="index.js"></script>
     <script
