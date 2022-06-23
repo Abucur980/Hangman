@@ -2,3 +2,22 @@
     font-size: 36px;
     border-bottom: 4px black solid;
 }
+
+#fail{
+    height: 100vh;
+    z-index: 999;
+    background: red;
+}
+
+#success{
+    height: 100vh;
+    z-index: 999;
+    background: green;
+}
+
+.center{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
