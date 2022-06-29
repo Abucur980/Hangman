@@ -78,4 +78,4 @@
 		document.getElementById("fail-text").appendChild(answer);
 		document.getElementsByTagName("main")[0].style.display = "none";
 	}
-	})();
+})();
